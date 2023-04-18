@@ -11,6 +11,10 @@ const Sidepane = () => {
     .matchMedia("(max-width: 768px)")
     .addEventListener('change', e => setMobile( e.matches ));
   }, []);
+  const backgroundStyle = {
+    // background: "linear-gradient(287.56deg, #00031A 0%, rgba(15, 23, 95, 0.96) 100%)"
+    backgroundColor: '#14001E'
+}
   const montFont = {
     fontFamily: 'Montserrat',
     borderRadius: '7px'
@@ -32,9 +36,9 @@ const Sidepane = () => {
   }
 
   return (
-    <div className='select-none'>
+    <div className='select-none' style={backgroundStyle}>
     <button className={`${mobile ? "block" : "hidden"} fixed py-8 px-8`}><GoThreeBars className='text-3xl'/></button>
-    <div className= {`fixed ${mobile ? "hidden" : "flex"} mt-7 flex-col ml-10 w-[15%] h-[90%] border-slate-700 border-r-[1px]`} >
+    <div className= {`fixed ${mobile ? "hidden" : "flex"} mt-7 flex-col ml-10 w-[15%] h-[90%] border-slate-700 border-r-[1px]`} style={backgroundStyle} >
       <h1 className='text-[1.8rem]'>INDEFLIX</h1>
       <ul className='mt-11 -ml-3 w-[100%]' style={montFont}>
         <Link to='/premium'>

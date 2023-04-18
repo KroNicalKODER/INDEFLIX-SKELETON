@@ -9,7 +9,7 @@ const contributions = () => {
         backgroundColor: '#14001E'
     }
   return (
-    <div className='h-screen' style={backgroundStyle}>
+    <div className='h-fit' style={backgroundStyle}>
         <div>
           {/* <Sidepane/> */}
           <Header/>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const header = () => {
+const header = ({position}) => {
   const backgroundNone = {
     background: 'none'
   }
@@ -13,9 +13,10 @@ const header = () => {
     backgroundColor: '#14001E'
 }
   return (
-    <div className='fixed flex ml-80 w-[70%] z-10 border-slate-700 border-b-2 py-7' style={backgroundStyle}> 
+    <div className='flex ml-80 w-[70%] z-10 border-slate-700 border-b-2 py-7' style={backgroundStyle}> 
         <input type='search' placeholder='Search' className='w-[87%] py-2 px-3 border-white border-[1px] mr-1' style={{...backgroundNone,...montFont}} />
         <button className='bg-indigo-500 border-slate-400 border-2 px-7 mx-2 transition duration-500 hover:bg-indigo-400' style={montFont}>Search</button>
+        <div className='bg-[#14001E] w-40'></div>
         <hr className=''/>
     </div>
   )

@@ -25,6 +25,7 @@ function App() {
         <Route exact path='/lock2' element={<AfterLogin/>} />
         <Route exact path='/' element={<Contributions/>} />
         <Route exact path='/global' element={<Global/>} />
+        <Route exact path='/global/video/:id' element={<Video/>} />
         <Route exact path='/profile' element={<Profile/>  } />
         <Route exact path='/premium' element={<Premium/>  } />
         <Route exact path='/logout' element={<Logout/>  } />
